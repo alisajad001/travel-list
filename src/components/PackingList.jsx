@@ -1,6 +1,6 @@
 const initialItems = [
   { id: 1, description: "Passport", quantitiy: 2, packed: false },
-  { id: 1, description: "Socks", quantitiy: 4, packed: false },
+  { id: 1, description: "Socks", quantitiy: 4, packed: true },
   { id: 1, description: "Sunglasses", quantitiy: 4, packed: false },
 ];
 

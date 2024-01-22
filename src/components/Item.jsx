@@ -1,7 +1,7 @@
 function Item({ item }) {
   return (
     <li className="item">
-      <span>
+      <span className={item.packed ? "packed" : ""}>
         {item.quantitiy} {item.description}
       </span>
       <button>❌</button>
