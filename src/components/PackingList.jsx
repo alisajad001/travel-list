@@ -1,5 +1,5 @@
 function PackingList() {
-  return <div>List</div>;
+  return <div className="pack-list">List</div>;
 }
 
 export default PackingList;
