@@ -5,6 +5,10 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -42,11 +46,28 @@
 .pack-list {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 0;
   height: calc(100vh - 250px);
   background-color: rgb(65, 52, 33);
   color: rgb(255, 250, 241);
+}
+
+.item {
+  font-weight: 600;
+}
+
+.item button {
+  border: none;
+  margin-left: 10px;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+item.packed {
+  text-decoration: line-through;
 }
 
 .stats {
