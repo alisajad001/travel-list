@@ -1,18 +1,26 @@
 import { useState } from "react";
 
 function Form() {
-  const [quantity, setQuantity] = useState(2);
+  const [quantity, setQuantity] = useState(1);
   const [description, setDescription] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    const form = event.target;
-    const item = {
-      description: form.elements.item.value,
-      quantity: form.elements.quantity.value,
+
+    if (!description) {
+      alert("Please enter an item");
+      return;
+    }
+
+    const newItem = {
+      id: Date.now(),
+      quantity,
+      description,
       packed: false,
     };
-    console.log(item);
+
+    setDescription("");
+    setQuantity(1);
   }
 
   return (
