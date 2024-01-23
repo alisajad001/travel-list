@@ -1,6 +1,6 @@
 function Item({ item, onDeleteItem, onToggleItem }) {
   return (
-    <li className="item">
+    <li>
       <input
         type="checkbox"
         value={item.packed}

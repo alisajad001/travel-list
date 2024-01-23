@@ -19,8 +19,8 @@ function PackingList({ items, onDeleteItem, onToggleItem }) {
       .sort((a, b) => Number(a.packed) - Number(b.packed));
 
   return (
-    <>
-      <ul className="pack-list">
+    <div className="list">
+      <ul>
         {sortedItems.map((item) => {
           return (
             <Item
@@ -40,7 +40,7 @@ function PackingList({ items, onDeleteItem, onToggleItem }) {
           <option value="packed">Sort by packed</option>
         </select>
       </div>
-    </>
+    </div>
   );
 }
 
