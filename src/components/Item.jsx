@@ -2,7 +2,7 @@ function Item({ item }) {
   return (
     <li className="item">
       <span className={item.packed ? "packed" : ""}>
-        {item.quantitiy} {item.description}
+        {item.quantity} {item.description}
       </span>
       <button>❌</button>
     </li>
