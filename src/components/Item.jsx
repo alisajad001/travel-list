@@ -1,10 +1,10 @@
-function Item({ item }) {
+function Item({ item, onDeleteItem }) {
   return (
     <li className="item">
       <span className={item.packed ? "packed" : ""}>
         {item.quantity} {item.description}
       </span>
-      <button>❌</button>
+      <button onClick={() => onDeleteItem(item.id)}>❌</button>
     </li>
   );
 }
