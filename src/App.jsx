@@ -7,10 +7,14 @@ import Stats from "./components/Stats";
 function App() {
   const [items, setItems] = useState([]);
 
+  function handleAddItems(item) {
+    setItems((prevItems) => [...prevItems, item]);
+  }
+
   return (
     <div className="app">
       <Logo />
-      <Form setItems={setItems} />
+      <Form onAddItem={handleAddItems} />
       <PackingList items={items} />
       <Stats />
     </div>
