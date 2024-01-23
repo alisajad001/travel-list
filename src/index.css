@@ -79,6 +79,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: start;
   padding: 2rem 0;
   height: calc(100vh - 250px);
   background-color: rgb(65, 52, 33);
@@ -87,6 +88,8 @@ li {
 
 .item {
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .item button {
@@ -99,6 +102,15 @@ li {
 
 .item .packed {
   text-decoration: line-through;
+  color: rgb(134, 119, 97);
+}
+
+.item input[type="checkbox"] {
+  margin-right: 7px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  accent-color: rgb(196, 123, 13);
 }
 
 .stats {
