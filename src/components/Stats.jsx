@@ -3,6 +3,12 @@ function Stats({ items }) {
   const packedItems = items.filter((item) => item.packed).length;
   const precentage = Math.round((packedItems / totalItems) * 100);
 
+  if (!items.length) {
+    return (
+      <p className="stats">Start adding some items to your packing list</p>
+    );
+  }
+
   return (
     <footer className="stats">
       <em>
